@@ -10,7 +10,10 @@ RUN \
   pacman-db-upgrade && \
   pacman -Su --noconfirm && \
 
-  # Install docker
+  # Install Git
+  pacman -S git --noconfirm && \
+
+  # Install Docker
   pacman -S docker --noconfirm && \
 
   # Install what is needed for building native extensions
