@@ -21,6 +21,9 @@ RUN \
   gem install test-kitchen berkshelf kitchen-docker_cli \
     --no-user-install --no-rdoc --no-ri && \
 
+  # Install Foodcritic and Rubocop
+  gem install foodcritic rubocop --no-user-install --no-rdoc --no-ri && \
+
   # Time to clean
   pacman -Rs gcc make --noconfirm && \
   pacman -Scc --noconfirm
