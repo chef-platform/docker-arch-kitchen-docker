@@ -21,7 +21,7 @@ RUN \
 
   # Install Ruby and Gems
   pacman -S ruby --noconfirm && \
-  gem install test-kitchen berkshelf kitchen-docker_cli \
+  gem install test-kitchen berkshelf kitchen-docker_cli bundler \
     --no-user-install --no-rdoc --no-ri && \
 
   # Install Foodcritic and Rubocop
