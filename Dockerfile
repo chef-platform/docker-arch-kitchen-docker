@@ -27,9 +27,13 @@ RUN \
   # Install Foodcritic and Rubocop
   gem install foodcritic rubocop --no-user-install --no-rdoc --no-ri && \
 
+  # Generate locale en_US (workaround for a strange bug in berkshelf)
+  locale-gen en_US.UTF-8 && \
+
   # Time to clean
   pacman -Rs gcc make --noconfirm && \
   pacman -Scc --noconfirm
 
+ENV LANG=en_US.UTF-8
 VOLUME ["/var/run/docker.sock"]
 CMD ["/usr/bin/bash"]
