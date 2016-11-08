@@ -31,7 +31,6 @@ RUN \
   locale-gen en_US.UTF-8 && \
 
   # Time to clean
-  pacman -Rs gcc make --noconfirm && \
   pacman -Scc --noconfirm
 
 ENV LANG=en_US.UTF-8
