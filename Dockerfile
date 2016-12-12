@@ -16,6 +16,9 @@ RUN \
   # Install Docker
   pacman -S docker --noconfirm && \
 
+  # It quite common to need to interact with S3
+  pacman -S s3cmd --noconfirm && \
+
   # Install what is needed for building native extensions
   pacman -S gcc make --noconfirm && \
 
