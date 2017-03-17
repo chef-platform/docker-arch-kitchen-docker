@@ -20,7 +20,7 @@ RUN \
   pacman -S s3cmd --noconfirm && \
 
   # Install what is needed for building native extensions
-  pacman -S gcc make --noconfirm && \
+  pacman -S gcc make sed grep awk --noconfirm && \
 
   # Install Ruby and Gems
   pacman -S ruby --noconfirm && \
