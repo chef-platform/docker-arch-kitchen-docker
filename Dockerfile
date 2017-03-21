@@ -1,5 +1,5 @@
 FROM base/archlinux:latest
-MAINTAINER Samuel Bernard "samuel.bernard@s4m.io"
+MAINTAINER Samuel Bernard "samuel.bernard@gmail.com"
 
 # Let's run stuff
 RUN \
