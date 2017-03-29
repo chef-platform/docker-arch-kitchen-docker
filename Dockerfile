@@ -37,5 +37,4 @@ RUN \
   pacman -Scc --noconfirm
 
 ENV LANG=en_US.UTF-8
-VOLUME ["/var/run/docker.sock"]
 CMD ["/usr/bin/bash"]
