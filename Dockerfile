@@ -20,7 +20,7 @@ RUN \
   pacman -S s3cmd --noconfirm && \
 
   # Install what is needed for building native extensions
-  pacman -S gcc make sed awk gzip grep --noconfirm && \
+  pacman -S gcc make sed awk gzip grep autoconf automake --noconfirm && \
 
   # Install useful tools
   pacman -S vim tree iproute2 inetutils --noconfirm && \
