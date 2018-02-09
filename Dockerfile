@@ -16,6 +16,9 @@ RUN \
   # Install Docker
   pacman -S docker --noconfirm && \
 
+  # Install kmod for Docker
+  pacman -S kmod --noconfirm && \
+
   # It quite common to need to interact with S3
   pacman -S s3cmd --noconfirm && \
 
