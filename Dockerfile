@@ -26,7 +26,7 @@ RUN \
   pacman -S gcc make sed awk gzip grep autoconf automake --noconfirm && \
 
   # Install useful tools
-  pacman -S vim tree iproute2 inetutils --noconfirm && \
+  pacman -S vim tree iproute2 inetutils openssh --noconfirm && \
 
   # Install Ruby and Gems
   pacman -S ruby --noconfirm && \
