@@ -1,4 +1,4 @@
-FROM base/archlinux:latest
+FROM archlinux/base:latest
 MAINTAINER Samuel Bernard "samuel.bernard@gmail.com"
 
 # Let's run stuff
