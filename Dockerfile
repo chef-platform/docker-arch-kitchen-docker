@@ -37,7 +37,8 @@ RUN \
   gem install foodcritic rubocop --no-user-install --no-rdoc --no-ri && \
 
   # Generate locale en_US (workaround for a strange bug in berkshelf)
-  locale-gen en_US.UTF-8 && \
+  echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen && \
+  locale-gen && \
 
   # Time to clean
   pacman -Scc --noconfirm
