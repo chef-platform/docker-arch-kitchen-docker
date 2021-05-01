@@ -30,7 +30,7 @@ RUN \
   pacman -S vim tree iproute2 inetutils openssh --noconfirm && \
   # Install Ruby and Gems
   pacman -S ruby --noconfirm && \
-  gem install test-kitchen berkshelf kitchen-docker_cli bundler \
+  gem install test-kitchen berkshelf knife kitchen-docker_cli bundler \
     --no-user-install --no-document && \
   # Install Foodcritic and Rubocop
   gem install foodcritic rubocop --no-user-install --no-document && \
